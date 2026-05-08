@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>18th Debut Invitation</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Inter:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Welcome Modal -->
+    <div id="welcomeModal" class="welcome-modal">
+        <div class="modal-content text-center">
+            <h2 class="subtitle" style="color: var(--rose-gold);">You are invited to the</h2>
+            <h1 class="title">18th Birthday</h1>
+            <h2 class="name" style="margin-top:0; color: var(--rose-gold-light);">Joyce Ann</h2>
+            <button id="openInvitationBtn" class="btn-primary" style="margin-top: 30px; padding: 15px 40px; font-size: 1.3rem; border-radius: 30px;">
+                Open Invitation <i class="fas fa-envelope-open-text" style="margin-left: 10px;"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- Audio Player -->
+    <audio id="bgMusic" loop>
+        <!-- Soft Acoustic Music -->
+        <source src="music.mp3" type="audio/mpeg">
+    </audio>
+
+    <div id="audioToggle" class="sound-waves">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
+
+    <div class="container">
+        <!-- Flipbook Container -->
+        <div class="flip-book" id="flipbook">
+
+            <!-- PAGE 1: Front Cover -->
+            <div class="page page-cover page-cover-top" data-density="hard">
+                <div class="page-content" style="padding: 0;">
+                    <img src="5.png" style="width: 100%; height: 100%; object-fit: cover;" alt="Front Cover">
+                </div>
+            </div>
+
+
+
+            <!-- PAGE 6: 18s (6.png) -->
+            <div class="page">
+                <div class="page-content" style="padding: 0;">
+                    <img src="6.png" style="width: 100%; height: 100%; object-fit: cover;" alt="18s">
+                </div>
+            </div>
+
+            <!-- PAGE 7: 18s (7.png) -->
+            <div class="page">
+                <div class="page-content" style="padding: 0;">
+                    <img src="7.png" style="width: 100%; height: 100%; object-fit: cover;" alt="18s">
+                </div>
+            </div>
+
+            <!-- PAGE 8: 18s (8.png) -->
+            <div class="page">
+                <div class="page-content" style="padding: 0;">
+                    <img src="8.png" style="width: 100%; height: 100%; object-fit: cover;" alt="18s">
+                </div>
+            </div>
+
+            <!-- PAGE 9: 18s (9.png) -->
+            <div class="page">
+                <div class="page-content" style="padding: 0;">
+                    <img src="9.png" style="width: 100%; height: 100%; object-fit: cover;" alt="18s">
+                </div>
+            </div>
+
+            <!-- PAGE 10: 18s (10.png) -->
+            <div class="page">
+                <div class="page-content" style="padding: 0;">
+                    <img src="10.png" style="width: 100%; height: 100%; object-fit: cover;" alt="18s">
+                </div>
+            </div>
+
+            <!-- PAGE 11: 18s (11.png) -->
+            <div class="page">
+                <div class="page-content" style="padding: 0;">
+                    <img src="11.png" style="width: 100%; height: 100%; object-fit: cover;" alt="18s">
+                </div>
+            </div>
+
+
+
+            <!-- PAGE 9: Inside Back Cover -->
+            <div class="page" data-density="hard">
+                <div class="page-content inside-cover">
+                    <!-- pattern -->
+                </div>
+            </div>
+
+            <!-- PAGE 10: Back Cover -->
+            <div class="page page-cover page-cover-bottom" data-density="hard">
+                <div class="page-content">
+                    <div class="back-cover-design">
+                        <p class="signature" style="color: #FDFBF7;">Thank You</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- PageFlip Library -->
+    <script src="https://cdn.jsdelivr.net/npm/page-flip/dist/js/page-flip.browser.min.js"></script>
+    <!-- Custom Script -->
+    <script src="script.js"></script>
+</body>
+</html>
