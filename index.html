@@ -16,6 +16,24 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Preloader -->
+    <div id="preloader" class="preloader">
+        <div class="loader-ring"></div>
+        <p class="loader-text">Loading Magic...</p>
+    </div>
+
+    <!-- Fireflies Background -->
+    <div class="fireflies">
+        <span></span><span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span><span></span>
+    </div>
+
+    <!-- Swipe Helper -->
+    <div id="swipeHelper" class="swipe-helper">
+        <i class="fas fa-hand-pointer swipe-icon"></i>
+        <p>Swipe to turn page</p>
+    </div>
 
     <!-- Welcome Modal -->
     <div id="welcomeModal" class="welcome-modal">
@@ -23,6 +41,15 @@
             <h2 class="subtitle" style="color: var(--rose-gold);">You are invited to the</h2>
             <h1 class="title">18th Birthday</h1>
             <h2 class="name" style="margin-top:0; color: var(--rose-gold-light);">Joyce Ann</h2>
+            
+            <!-- Countdown Timer -->
+            <div id="countdown" class="countdown mt-3">
+                <div class="time-box"><span id="cd-days">00</span><small>Days</small></div>
+                <div class="time-box"><span id="cd-hours">00</span><small>Hrs</small></div>
+                <div class="time-box"><span id="cd-mins">00</span><small>Min</small></div>
+                <div class="time-box"><span id="cd-secs">00</span><small>Sec</small></div>
+            </div>
+
             <button id="openInvitationBtn" class="btn-primary" style="margin-top: 30px; padding: 15px 40px; font-size: 1.3rem; border-radius: 30px;">
                 Open Invitation <i class="fas fa-envelope-open-text" style="margin-left: 10px;"></i>
             </button>
